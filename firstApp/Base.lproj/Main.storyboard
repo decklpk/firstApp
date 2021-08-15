@@ -36,6 +36,36 @@
                                     <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKa-gF-idd"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="VUx-VH-U6x">
+                                <rect key="frame" x="65" y="344" width="245" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sap-Pa-e56">
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Show Text 2">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgi-PX-3OJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTj-ge-yme">
+                                        <rect key="frame" x="0.0" y="54" width="245" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Show Text 3">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNT-EY-1qC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="gOF-py-rdm"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -44,7 +74,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xpt-By-pZL" secondAttribute="bottom" constant="104" id="DJs-G3-0e0"/>
                             <constraint firstItem="Xpt-By-pZL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bey-VS-Bkv"/>
                             <constraint firstItem="rbq-BI-Ws0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="166" id="dq1-Kh-rm4"/>
+                            <constraint firstItem="VUx-VH-U6x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fui-Rh-gsc"/>
                             <constraint firstItem="rbq-BI-Ws0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="wda-DT-chb"/>
+                            <constraint firstItem="Xpt-By-pZL" firstAttribute="top" secondItem="VUx-VH-U6x" secondAttribute="bottom" constant="81" id="x2j-wG-GjU"/>
                         </constraints>
                     </view>
                     <connections>
