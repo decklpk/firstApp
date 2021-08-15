@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func toggleTextButtonPressed() {
         if helloWorldLabel.isHidden {
-            helloWorldLabel.isHidden = false
+            helloWorldLabel.isHidden.toggle()
             toggleTextButton.setTitle("Hide Text", for: .normal)
         } else {
             helloWorldLabel.isHidden.toggle()
